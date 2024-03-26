@@ -21,7 +21,7 @@ export default async function Detail({params}) {
     return (
         <main>
         {
-            data.map(country => (<div>
+            data.map(country => (<div key={country.name}>
 
                     <h1>{country.name.official}</h1>
 
